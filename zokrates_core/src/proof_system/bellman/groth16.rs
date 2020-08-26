@@ -2,7 +2,7 @@ use bellman::groth16::{
     prepare_verifying_key, verify_proof, Parameters, PreparedVerifyingKey, Proof as BellmanProof,
     VerifyingKey,
 };
-use pairing::{CurveAffine, Engine};
+use bellman::pairing::{CurveAffine, Engine};
 use regex::Regex;
 
 use zokrates_field::Field;
@@ -252,7 +252,7 @@ impl<T: Field> ProofSystem<T> for G16 {
 }
 
 mod serialization {
-    use pairing::{from_hex, CurveAffine, Engine};
+    use bellman::pairing::{from_hex, CurveAffine, Engine};
     use proof_system::{G1Affine, G2Affine};
     use zokrates_field::Field;
 

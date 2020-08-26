@@ -25,7 +25,7 @@ serde_bytes = "0.10"
 bincode = "0.8.0"
 hex = "0.4.2"
 regex = "0.2"
-pairing_ce = "^0.21"
+pairing_ce = {package = "pairing_ce", version = "0.21.*" }
 ff_ce = "^0.9"
 zokrates_field = { version = "0.3.0", path = "../zokrates_field" }
 zokrates_pest_ast = { version = "0.1.0", path = "../zokrates_pest_ast" }
